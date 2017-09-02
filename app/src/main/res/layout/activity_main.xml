@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.dhakasroad.MainActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ABB2B9"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Find transport"
+            android:textSize="20dp"
+            android:textColor="#ffff"
+            android:background="@color/colorPrimary"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/autocompleteEditTextView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:text=""
+            android:hint="From"
+
+            android:textColor="#000000" />
+        <AutoCompleteTextView
+            android:id="@+id/autocompleteEditTextView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:ems="10"
+            android:text=""
+            android:hint="To"
+            android:textColor="#000000" />
+
+        <FrameLayout
+            android:id="@+id/fragmentContainer1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="200dp">
+
+    </FrameLayout>
+
+</LinearLayout>
